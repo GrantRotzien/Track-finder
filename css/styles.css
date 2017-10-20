@@ -1,0 +1,23 @@
+img {
+  width: 50%;
+  height: 50%;
+}
+
+h3 {
+  margin-top: -35px;
+  margin-bottom: 2px;
+  margin-left: 115px
+}
+
+h3, .logo {
+  position: absolute;
+}
+
+#epicodusblue {
+  color: #009cb5;
+}
+
+.logo {
+  float: left;
+  margin-top: -32px;
+}

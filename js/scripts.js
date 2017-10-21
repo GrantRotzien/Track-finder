@@ -11,9 +11,8 @@ $(document).ready(function) {
       $("phpResult").hide();
       $("rubyResult").show();
 
-    }
-    if (a) {
-      var totalVal = +1
+    } else if
+
 
 
     }

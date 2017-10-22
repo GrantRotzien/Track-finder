@@ -23,51 +23,61 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h2 class="panel-title">Begin Quiz</h2>
+              <!--Question A is for Job Title-->
+              <!--Question B is for application preference-->
+              <!--Question C is for startup opinion -->
+              <!--Question D is for C#/PHP preference-->
+              <!--Question E is a joke question, disregard this.-->
             </div>
             <div class="panel-body">
-              <form>
+              <form class="trackquiz">
+                <!--Val 1 is Java/Android-->
+                <!--Val 2 is Ruby/Rails-->
+                <!--Val 3 is PHP/Drupal-->
+                <!--Val 4 is C#/.NET-->
                 <div class="form-group">
-                  <label for="Javaorphp">What job title sounds better to you?</label>
-                  <select class="form-control" id="a">
+                  <label for="a">What job title sounds better to you?</label>
+                  <select class="form-control" id="jobtitleInput">
                     <option>Blank</option>
-                    <option value="java">Software Engineer</option>
-                    <option value="php">Web Developer</option>
+
+                    <option value="1">Software Engineer</option>
+                    <option value="3">Web Developer</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="javaorruby">Do you prefer to make computer and mobile applications or do you prefer making websites?</label>
-                  <select class="form-control" id="b">
+                  <label for="b">Do you prefer to make computer and mobile applications or do you prefer making websites?</label>
+                  <select class="form-control" id="mobileorwebInput">
                     <option>Blank</option>
-                    <option value="java">Software and Mobile Apps</option>
-                    <option value="ruby">Websites</option>
+                    <option value="1">Software and Mobile Apps</option>
+                    <option value="2">Websites</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="rubyorcsharp">Do you prefer to work at a startup or a more established company?</label>
-                  <select class="form-control" id="c">
+                  <label for="c">Do you prefer to work at a startup or a more established company?</label>
+                  <select class="form-control" id="startupInput">
                     <option>Blank</option>
-                    <option value="csharp">Established</option>
-                    <option value="ruby">Startup</option>
+                    <option value="4">Established</option>
+                    <option value="2">Startup</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="softwareorweb">Do you prefer C# or PHP?</label>
-                  <select class="form-control" id="d">
+                  <label for="d">Do you prefer C# or PHP?</label>
+                  <select class="form-control" id="csharporphpInput">
                     <option>Blank</option>
-                    <option value="csharp">I have no clue what that means</option>
-                    <option value="php">PHP all the way!</option>
+                    <option value="4">I have no clue what that means</option>
+                    <option value="3">PHP all the way!</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="softwareorweb">Do you you even like to code?</label>
-                  <select class="form-control" id="e">
+                  <label for="e">Do you you even like to code?</label>
+                  <select class="form-control" id="jokeInput">
                     <option>Blank</option>
-                    <option value="java">I binge watched Silicon Valley on HBO so here i am!</option>
-                    <option value="css">I like the way facebook is designed so here i am!</option>
+                    <option value="0">I binge watched Silicon Valley on HBO so here i am!</option>
+                    <option value="0">I like the way facebook is designed so here i am!</option>
                   </select>
                 </div>
                 <button type="submit" class="btn btn-success btn-lg btn-block">Whats My Suggested Track?</button>

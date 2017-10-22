@@ -25,3 +25,25 @@ h3, .logo {
 .row {
   padding-top: 15px;
 }
+
+#javaresult {
+  display: none;
+}
+
+#rubyresult {
+  display: none;
+}
+
+#phpresult {
+  display: none;
+}
+
+#csharpresult {
+  display: none;
+}
+
+
+.trackquiz {
+  display: inherit;
+
+}

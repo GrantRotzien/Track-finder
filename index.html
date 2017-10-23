@@ -29,8 +29,9 @@
               <!--Question D is for C#/PHP preference-->
               <!--Question E is a joke question, disregard this.-->
             </div>
+
             <div class="panel-body">
-              <form class="trackquiz">
+              <form id="tracker" class="trackquiz">
                 <!--Val 1 is Java/Android-->
                 <!--Val 2 is Ruby/Rails-->
                 <!--Val 3 is PHP/Drupal-->
@@ -39,9 +40,9 @@
                   <label for="a">What job title sounds better to you?</label>
                   <select class="form-control" id="jobtitleInput">
                     <option>Blank</option>
-
                     <option value="1">Software Engineer</option>
                     <option value="3">Web Developer</option>
+                    <option value="0">Neither</option>
                   </select>
                 </div>
 
@@ -51,6 +52,7 @@
                     <option>Blank</option>
                     <option value="1">Software and Mobile Apps</option>
                     <option value="2">Websites</option>
+                    <option value="0">Neither</option>
                   </select>
                 </div>
 
@@ -60,6 +62,7 @@
                     <option>Blank</option>
                     <option value="4">Established</option>
                     <option value="2">Startup</option>
+                    <option value="0">Neither</option>
                   </select>
                 </div>
 
@@ -69,6 +72,7 @@
                     <option>Blank</option>
                     <option value="4">I have no clue what that means</option>
                     <option value="3">PHP all the way!</option>
+                    <option value="0">Neither</option>
                   </select>
                 </div>
 
@@ -79,17 +83,49 @@
                     <option value="0">I binge watched Silicon Valley on HBO so here i am!</option>
                     <option value="0">I like the way facebook is designed so here i am!</option>
                   </select>
+                  <button id="findTrack" type="submit" class="btn btn-success btn-lg btn-block">Whats My Suggested Track?</button>
                 </div>
-                <button type="submit" class="btn btn-success btn-lg btn-block">Whats My Suggested Track?</button>
               </form>
-
-
-
-
-
-
-
-
+              <div id="javaResult">
+                <div class="alert alert-success">
+                  <strong>Success!</strong>
+                  <h4>Congrats! you are more compatible with Java/Android!</h4>
+                  <p><strong>Java</strong> allows you to play online games, chat with people around the world, calculate your mortgage interest, and view images in 3D, just to name a few. It's also integral to the intranet applications and other e-business solutions that are the foundation of corporate computing.</p>
+                  <a href="https://java.com/en/">Click here for more info on Java!</a>
+                  <p><strong>Android</strong> is an open-source operating system used for smartphones and tablet computers.</p>
+                  <a href="https://www.android.com/">Click here for more info on Android</a>
+                </div>
+              </div>
+              <div id="rubyResult">
+                <div class="alert alert-success">
+                  <strong>Success!</strong>
+                  <h4>Congrats! you are more compatible with the Ruby/Rails track!</h4>
+                  <p><strong>Ruby</strong> is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to.</p>
+                  <a href="https://www.ruby-lang.org/en/">Click here for more info on Ruby!</a>
+                  <p><strong>Rails</strong> is a web application development framework written in the Ruby language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks.</p>
+                  <a href="http://rubyonrails.org/">Click here for more info on Rails!</a>
+                </div>
+              </div>
+              <div id="phpResult">
+                <div class="alert alert-success">
+                  <strong>Success!</strong>
+                  <h4>Congrats! you are more compatible with the PHP/Drupal track!</h4>
+                  <p><strong>PHP</strong> (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+                  <a href="http://php.net/manual/en/intro-whatis.php">Click here to learn more about PHP!</a>
+                  <p><strong>Drupal</strong> is free, open source software that can be used by individuals or groups of users -- even those lacking technical skills -- to easily create and manage many types of Web sites. The application includes a content management platform and a development framework.</p>
+                  <a href="https://www.drupal.com/">Click here to learn more about drupal</a>
+                </div>
+              </div>
+              <div id="cSharpResult">
+                <div class="alert alert-success">
+                  <strong>Success!</strong>
+                  <h4>Congrats! you are more compatible with the C#/.NET track!</h4>
+                  <p><strong>C#</strong> (pronounced as see sharp) is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.</p>
+                  <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Click here to learn more about C#!</a>
+                  <p><strong>.NET</strong> is a software framework developed by Microsoft that runs primarily on Microsoft Windows. Microsoft also produces an integrated development environment largely for .NET software called Visual Studio.</p>
+                  <a href="https://www.microsoft.com/net/">Click here to learn more about .NET</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -113,8 +149,6 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </body>
